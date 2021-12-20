@@ -7,7 +7,7 @@ Profesor:
 
 Integrante: **Gatica , Emmanuel David.**
 
-**El proyecto actual se encuentra en desarrollo, los detalles del paso a paso , del mismo serán incluidos pronto!!**
+**El proyecto actual se encuentra en desarrollo, los detalles del paso a paso , al igual que los requerimientos, serán incluidos pronto!!**
 
 
 
