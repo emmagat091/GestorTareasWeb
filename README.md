@@ -7,5 +7,8 @@ Profesor:
 
 Integrante: **Gatica , Emmanuel David.**
 
+**El proyecto actual se encuentra en desarrollo, los detalles del paso a paso , del mismo serán incluidos pronto!!**
 
-Desarrollo en ADF con pdf versión en Español.
+
+
+ Desarrollo en ADF con pdf versión en Español.
