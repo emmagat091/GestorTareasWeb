@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+  <persistence-unit name="persistenceUnit">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/TareasDS</jta-data-source>
+    <class>com.ayiAdfFormacion.entities.Estados</class>
+    <class>com.ayiAdfFormacion.entities.Notas</class>
+    <class>com.ayiAdfFormacion.entities.Temas</class>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic 10"/>
+      <property name="javax.persistence.jtaDataSource" value="java:/app/jdbc/jdbc/TareasDS"/>
+    </properties>
+  </persistence-unit>
+</persistence>

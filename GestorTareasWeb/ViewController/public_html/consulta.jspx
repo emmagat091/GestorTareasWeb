@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="consulta.jspx" id="d1">
+            <af:form id="f1">
+                <af:panelStretchLayout id="psl1">
+                    <f:facet name="center">
+                        <!-- id="af_one_column_stretched"   -->
+                        <af:decorativeBox theme="dark" id="db1">
+                            <f:facet name="center">
+                                <af:decorativeBox theme="medium" id="db2">
+                                    <f:facet name="center"/>
+                                </af:decorativeBox>
+                            </f:facet>
+                        </af:decorativeBox>
+                    </f:facet>
+                </af:panelStretchLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

@@ -1,0 +1,38 @@
+
+
+
+Paso a paso  proyecto ADF - tutorial Español.
+paso 1 - creamos un proyecto c/ nombre " GestorTareaWeb" . En este proyecto se busca desarrollar una aplicacion en (Java Desktop application ADF).
+paso 2 - Realizamos las configuraciones pertinentes.
+paso 3 - Creamos el DER entre las tablas (Notas,Tareas,Eventos).
+paso 4 - Realizamos las conexiones con las PK y FK entre las tablas.
+paso 5 - Creamos la base de datos que vamos a emplear y la llamamos Tareas.
+paso 6 - Configuramos la conexion a la base de datos.
+paso 7 - Creamos las sequences, para cada una de las tablas en el apartado de database navigator (increment "1" y Star with "1").
+paso 8 - Creamos los entity objects dentro de la capa modelo (Modelo/Business tier en EJB como en Toplink/JPA/(Entities from tables).
+paso 9 - Configuramos la unidad de persistencia (dos formas de consultar los ficheros).
+paso 10- Revisamos las anotaciones (No me quedo claro, el tema de anotaciones para que sive o se usa).
+		 Analisis de la anotacion "entities" y  "Namedqueries".
+		 
+		 
+paso 11- Mapeo de atributos, para que se usa o utiliza??.
+paso 12- ""NO SE ME PRESENTARON LOS ERRORES"". Revisar porque!!.
+paso 13- Creamos las session bean dentro de la capa modelo (Modelo/Business tier en EJB como en Toplink/JPA/session bean).
+paso 14- Generamos otro proyecto dentro de nuestra aplicación en el que tendremos la vista y controlador haciendo uso de tecnología JSF.
+		 vamos a crear un "ADF ViewController Project". - seleccionamos "ADF Faces".
+		 
+paso 15- Al generar el un proyecto "ADF ViewController Project"; Uno de los ficheros más importantes es el:  (facesconfig.xml).
+		 Este fichero contiene información tal como qué páginas vamos a tener, qué reglas de navegación entre ellas van a existir, o con qué Beans vamos a trabajar.
+
+paso 16- Creamos una página Jspx (de consulta), le cambiamos el name a : consulta.jspx . esta pagina se genera , seleccionando de la paleta, (JSF Navigation Case).
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INFORMACION IMPORTANTE: Trabajando con JSF podemos crear tanto página jsp como jspx.Las primeras son de sobra conocidas, y permiten el uso tanto de etiquetas, como de
+scriptlets. Por contra, las páginas jspx son documentos XML bien formados.
+Apply Themes, que marcaremos para obtener una Web con una apariencia mejorada.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+paso 17- Comenzamos a darle contenido a las paginas , agregando contenidos JSF a las pagina. 
+paso 18-
+
+
+

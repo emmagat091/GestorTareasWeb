@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">29617dcc-1289-42f4-b9d3-795a517bfcc9</identifier>
+  </ID>
+  <name>NOTAS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2c971b09-0811-43f2-9f3f-2181a87eb71c</identifier>
+      </ID>
+      <name>SID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5f04d92d-fc6f-4570-aa60-15b79cf9027c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3ba50aa3-cda2-4237-ae0e-8f9532d53032</identifier>
+      </ID>
+      <name>NOTA</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">670eacac-f9cc-44e4-8497-5ea637d20c53</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">255</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cd85e4a1-f853-417d-80e0-69a32dea2659</identifier>
+      </ID>
+      <name>FECHA</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">78bf47d1-9f58-44d7-bc00-0d04272dadd6</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">13a1e4a8-fa37-416a-9e5a-fa899d8d8b1f</identifier>
+      </ID>
+      <name>FK_TEMA</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2f0c84ce-6c2c-4cca-b004-306b0b0e749d</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">bf1c9d9b-b481-44c8-93f4-fec22d77b2b7</identifier>
+      </ID>
+      <name>NOTAS_TEMAS_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>FK_TEMA</name>
+          <identifier class="java.lang.String">13a1e4a8-fa37-416a-9e5a-fa899d8d8b1f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOTAS</name>
+            <identifier class="java.lang.String">29617dcc-1289-42f4-b9d3-795a517bfcc9</identifier>
+            <schemaName>TAREAS</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>TAREAS</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>TEMAS_PK</name>
+        <identifier class="java.lang.String">6f1d1f4d-cc5f-441f-9c1f-37d5ad7d063b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>TEMAS</name>
+          <identifier class="java.lang.String">6e1583f0-c8ae-4934-960c-6c6ca38cb77c</identifier>
+          <schemaName>TAREAS</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>TAREAS</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d36ba1ce-c044-4204-ab41-be51cfc9537a</identifier>
+      </ID>
+      <name>NOTAS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>SID</name>
+          <identifier class="java.lang.String">2c971b09-0811-43f2-9f3f-2181a87eb71c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOTAS</name>
+            <identifier class="java.lang.String">29617dcc-1289-42f4-b9d3-795a517bfcc9</identifier>
+            <schemaName>TAREAS</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>TAREAS</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>false</enabled>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>TAREAS</name>
+  </schema>
+</table>
