@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="11.1.2.64.36" id="DataControls"
+                    Package="com.AyiCapacitacion">
+  <AdapterDataControl id="TareasSessionEJBLocal" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adfinternal.model.adapter.ejb.EjbDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="true" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="com.AyiCapacitacion.session.TareasSessionEJBLocal"
+                      BeanClass="com.AyiCapacitacion.session.TareasSessionEJBLocal"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="com.AyiCapacitacion.entities.Temas"/>
+      <TypeInfo FullName="com.AyiCapacitacion.entities.Notas"/>
+      <TypeInfo FullName="com.AyiCapacitacion.entities.Estados"/>
+    </CreatableTypes>
+    <Source>
+      <ejb-definition ejb-version="3.0" ejb-name="TareasSessionEJB" ejb-type="Session"
+                      ejb-business-interface="com.AyiCapacitacion.session.TareasSessionEJBLocal"
+                      ejb-interface-type="local" initial-context-factory="weblogic.jndi.WLInitialContextFactory"
+                      DataControlHandler="oracle.adf.model.adapter.bean.jpa.JPQLDataFilterHandler"
+                      xmlns="http://xmlns.oracle.com/adfm/adapter/ejb"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

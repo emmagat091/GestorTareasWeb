@@ -8,10 +8,27 @@
                 <af:panelStretchLayout id="psl1">
                     <f:facet name="center">
                         <!-- id="af_one_column_stretched"   -->
-                        <af:decorativeBox theme="dark" id="db1">
+                        <af:decorativeBox theme="dark" id="db2">
                             <f:facet name="center">
-                                <af:decorativeBox theme="medium" id="db2">
-                                    <f:facet name="center"/>
+                                <af:decorativeBox theme="medium" id="db1">
+                                    <f:facet name="center">
+                                        <af:panelStretchLayout id="psl2">
+                                            <f:facet name="bottom"/>
+                                            <f:facet name="center">
+                                                <af:panelSplitter id="ps1" splitterPosition="107">
+                                                    <f:facet name="first"/>
+                                                    <f:facet name="second"/>
+                                                </af:panelSplitter>
+                                            </f:facet>
+                                            <f:facet name="start"/>
+                                            <f:facet name="end"/>
+                                            <f:facet name="top">
+                                                <af:menuBar id="mb1">
+                                                    <af:menu text="menu 1" id="m1"/>
+                                                </af:menuBar>
+                                            </f:facet>
+                                        </af:panelStretchLayout>
+                                    </f:facet>
                                 </af:decorativeBox>
                             </f:facet>
                         </af:decorativeBox>
